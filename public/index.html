@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free AI Brand Kit Generator | BrandKit AI</title>
+  <meta name="description" content="Generate taglines, colour palettes, fonts, logos and brand voice in 30 seconds with AI. Free brand kit generator for startups and creators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p>BrandKit AI</p>
+  </header>
+
+  <main class="layout">
+    <section class="form-card">
+      <h1>Free AI Brand Kit Generator</h1>
+      <p class="subtitle">Get a tagline, colours, fonts and logo in 30 seconds</p>
+
+      <form id="brand-form" novalidate>
+        <div class="field">
+          <label for="businessName">Business name</label>
+          <input type="text" id="businessName" name="businessName" maxlength="60" required autocomplete="organization" placeholder="e.g. Chai Corner">
+        </div>
+
+        <div class="field">
+          <label for="description">What does your business do?</label>
+          <textarea id="description" name="description" maxlength="150" rows="4" required placeholder="Short description of your business"></textarea>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>Vibe</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="vibe" value="Modern" checked> Modern</label>
+              <label><input type="radio" name="vibe" value="Luxury"> Luxury</label>
+              <label><input type="radio" name="vibe" value="Playful"> Playful</label>
+              <label><input type="radio" name="vibe" value="Minimal"> Minimal</label>
+              <label><input type="radio" name="vibe" value="Bold"> Bold</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>Language</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="language" value="English" checked> English</label>
+              <label><input type="radio" name="language" value="Hindi"> Hindi</label>
+              <label><input type="radio" name="language" value="Hinglish"> Hinglish</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <button type="submit" id="create-btn">Create my brand kit</button>
+      </form>
+
+      <p id="status" aria-live="polite"></p>
+    </section>
+
+    <section class="result-area">
+      <div id="placeholder">Your brand kit will appear here</div>
+
+      <section id="results" hidden>
+        <div id="taglines">
+          <h2>Taglines</h2>
+        </div>
+        <div id="palettes">
+          <h2>Colour palettes</h2>
+        </div>
+        <div id="fonts">
+          <h2>Fonts</h2>
+        </div>
+        <div id="logos">
+          <h2>Logo</h2>
+        </div>
+        <div id="voice">
+          <h2>Brand voice</h2>
+        </div>
+        <div id="captions">
+          <h2>Sample posts</h2>
+        </div>
+        <button id="download-json" type="button">Download full kit (JSON)</button>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Ritika Rajput</p>
+  </footer>
+
+  <script src="logos.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
